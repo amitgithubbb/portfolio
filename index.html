@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Portal</title>
+<link rel="stylesheet" href="SS.CSS">
+<script>
+  function showContent(section) {
+    const sections = document.getElementsByClassName('content');
+    for (let i = 0; i < sections.length; i++) {
+      sections[i].style.display = 'none';
+    }
+    document.getElementById(section).style.display = 'block';
+  }
+</script>
+</head>
+<body>
+<header>
+  <h1>Student Portal</h1>
+</header>
+<nav>
+  <a href="#" onclick="showContent('details')">Student Details</a>
+  <a href="#" onclick="showContent('portfolio')">Portfolio</a>
+</nav>
+<div class="content" id="details">
+  <h2>Student Details</h2>
+  <form>
+    <label id="fname">First Name:</label><br><br>
+    <input type="text" id="fname" name="fname">
+    <br><br>
+    <label id="lname">Last Name</label><br><br>
+    <input type="text" id="lname" name="lname">
+    <br><br>
+    <label id="mailid">Email-id</label><br><br>
+    <input type="email" id="email" name="email">
+    <br><br>
+    <label id="gender">Gender</label>
+    <input type="radio" id="male" name="gender" id="male">
+    <label for="Male">male</label>
+    <input type="radio" id="female" name="gender" id="female">
+    <label for="feMale">female</label><br><br>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob">
+    <br><br>
+    <input type="submit" value="Submit"> &nbsp;
+    <input type="Reset" value="Reset">
+</form>
+
+</div>
+<div class="content" id="portfolio">
+  <h2>Portfolio</h2>
+  <div class="profile">
+    <img src="NNM22CS020.jpeg" alt="Your Photo">
+    <p>Hello, I'm Amit Sharma. I am a passionate web developer with a strong interest in HTML and CSS. I specialize in creating websites. In my free time, I enjoy playing chess, solving puzzles like the Rubik's cube, playing cricket, learning new languages, etc.</p>
+  </div>
+  <div class="Education">
+    <h3>Education</h3>
+    <p>Class 10th [Scored 95%], SP SMART SR. SEONDARY SCHOOL, [2020]</p>
+    <p>Class 12th-(PCM+Phy.education) [Scored 89.4%], SP SMART SR. SEONDARY SCHOOL, [2023]</p>
+  </div>
+  <div class="Hobbies">
+    <h3>Hobbies</h3>
+    <ul>
+      <li>Playing Cricket</li>
+      <li>Hiking</li>
+      <li>Photography</li>
+      <li>Chess</li>
+    </ul>
+  </div>
+  <div class="Skills">
+    <h3>Skills</h3>
+    <ul>
+      <li>HTML & CSS</li>
+      <li>PYTHON</li>
+      <li>C++</li>
+      <li>JAVA</li>
+    </ul>
+</div>
+</body>
+</html>
